@@ -40,7 +40,6 @@ app.get('/api/getdata', (req, res) => {
     const excelData = readExcel(excelFilePath)
 
     const entities = ['Chaina','India','United States','Russia','Japan','Indonesia','Germany','Brazil','United Kingdom','Italy', 'Bangladesh','France'];
-    const year = 1952;
 
     const result = findDataByCriteria(excelData,entities,years)
 

@@ -39,7 +39,7 @@ app.get('/api/getdata', (req, res) => {
     const excelFilePath = path.join(__dirname, 'data', 'population-and-demography.xlsx')
     const excelData = readExcel(excelFilePath)
 
-    const entities = ['Chaina','India','United States','Russia','Japan','Indonesia','Germany','Brazil','United Kingdom','Italy', 'Bangladesh','France'];
+    const entities = ['China','India','United States','Russia','Japan','Indonesia','Germany','Brazil','United Kingdom','Italy', 'Bangladesh','France'];
 
     const result = findDataByCriteria(excelData,entities,years)
 
